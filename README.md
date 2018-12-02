@@ -24,7 +24,7 @@ docker run -e "CONNECTION_URL='mongodb+srv://<user>:<password>@test-atlas-mongod
 La aplicación levanta le puerto **5000** para recibir las peticiones.
 
 Solamente se encuentra disponible el siguiente servicio:
-Intercambio json
+
 | Endpoint| Método | Acción  |
 |---------|:------:|:--------|
 | policy  | GET    | Obtiene todas las pólizas |
