@@ -5,7 +5,7 @@ RUN mkdir -p ${APP_ROOT}
 ADD mongoapi.py ${APP_ROOT}
 ADD requirements.txt ${APP_ROOT}
 RUN chmod -R u+x ${APP_ROOT} \
-    chgrp -R 0 ${APP_ROOT} && \
+#    chgrp -R 0 ${APP_ROOT} && \
     chmod -R g=u ${APP_ROOT} /etc/passwd
 RUN pip install -r ${APP_ROOT}/requirements.txt
 USER 10001
