@@ -6,7 +6,7 @@ ADD uid_entrypoint.sh ${APP_ROOT}
 ADD mongoapi.py ${APP_ROOT}
 ADD requirements.txt ${APP_ROOT}
 RUN pip install -r ${APP_ROOT}/requirements.txt &&\
-    apt install -y chmod coreutils &&\
+    apt install -y coreutils &&\
     chgrp -R 0 ${APP_ROOT} && \
     chmod -R g=u ${APP_ROOT}
 USER 1001
